@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+
+/* Information and details container and message related code*/
+
+.container {
+  display: none;
+  width: 380px;
+  height: 425px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px auto;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 15px;
+  background-image: url(Image/Night.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 8px 20px 4px;
+}
+
+.error-message {
+  font-size: 30px;
+  width: 300px;
+  margin: 2px auto;
+  text-align: center;
+}
+
+/* Textfield or input related code*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 5px;
+  border: 2px inset black;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.location .city {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  text-shadow: 4px 3px 5px rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 5px 3px 3px black;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode styles */
+
+.app-wrap.dark-mode {
+  height: 750px;
+  background: black;
+}
+
+.app-wrap.dark-mode header input {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.app-wrap.dark-mode header input:focus {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.app-wrap.dark-mode .container {
+  border: 2px solid white;
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 8px 20px 4px;
+}
+
+.app-wrap.dark-mode .location .city,
+.app-wrap.dark-mode .location .date,
+.app-wrap.dark-mode .current .temp,
+.app-wrap.dark-mode .current .weather,
+.app-wrap.dark-mode .error-message {
+  color: #ffffff;
+}
+
+.current .feels-like,
+.current .humidity {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
+  margin: 5px 0;
+}
+
+.app-wrap.dark-mode .current .feels-like,
+.app-wrap.dark-mode .current .humidity {
+  color: #ffffff;
+}
+
+/* Button code */
+
+.search-btn,
+.toggle-mode-btn {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 13px;
+  margin-left: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 2s ease;
+  background-color: #ffffff3d;
+  color: #000000;
+}
+
+.search-btn:hover,
+.toggle-mode-btn:hover {
+  transform: scale(1);
+}
+
+.app-wrap.dark-mode .search-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.app-wrap.dark-mode .toggle-mode-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(90deg, rgb(160, 248, 253) 0%, hsla(188, 90%, 51%, 1) 100%);
+  color: #000000;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d623233c;
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  height: 70px;
+  margin: 0px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  font-size: 25px;
+  color: #000000;
+  text-decoration: none;
+  transition: all ease 0.1s;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+header nav ul li .active {
+  color: white;
+}
+
+.btn {
+  border: 2px inset black;
+  cursor: pointer;
+  padding: 7px 30px;
+  border-radius: 5px;
+  background-color: #15cd86;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.189);
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Image and intro Section  */
+
+.landing {
+  display: flex;
+  height: 90vh;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.image img {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin-right: 150px;
+  margin-top: 110px;
+}
+
+.landing .intro h3 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.intro button {
+  height: 48px;
+  width: 144px;
+  margin-top: 2.5vh;
+  margin-left: 200px;
+  background-color: rgb(125, 125, 124);
+  border: 2px outset #000000;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+
+.intro button:hover {
+  background-color: #666666;
+  color: #dbd5d5;
+}
+
+
+/* Social media Icons  */
+
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.social-icons i {
+  color: #000000;
+  font-size: 36px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i:hover {
+  color: rgb(55, 54, 54);
+}
+
+/* About Section  */
+
+.info {
+  margin: 50px;
+}
+
+.info li {
+  font-size: 20px;
+}
+
+.things li {
+  font-size: 20px;
+}
+
+.main {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 100px;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Skills Section  */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.skills h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #9c9b9a;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Contact Section  */
+
+.contact-me {
+  width: 100vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me h1 {
+  margin-top: 15px;
+  font-size: 56px;
+  text-decoration: underline;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: #15cd86;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10vh;
+}
+
+/* Project Section  */
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  height: 550px;
+  padding: 50px;
+  width: 100%;
+}
+
+.tittle {
+  margin-top: 15px;
+  font-size: 56px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  background-color: #6e6e6e00;
+  border-radius: 8px;
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transition: all ease 1s;
+  background-color: #a9a9a9;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.tap {
+  color: black;
+  padding: 8px 25px;
+  border-radius: 5px;
+  border: 2px outset black;
+  background-color: #504ecc;
+  text-decoration: none;
+}
+
+.tap:hover {
+  background-color: #3fc0ff;
+  transition: .3s;
+}
